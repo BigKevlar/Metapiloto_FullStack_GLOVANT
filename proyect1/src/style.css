@@ -1,0 +1,19 @@
+/* Estilo para asegurarnos que se ocupe toda la pantalla, independientemente del dispositivo. */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* el contenedor body sera flexbox. */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: space-between; /* Distribuye los contenedores verticalmente */
+    min-height: 100vh; /* Asegura que siempre ocupe al menos la altura completa de la ventana */
+    min-width: 100vw; /* Asegura que ocupe al menos el ancho completo de la ventana */
+}
+
